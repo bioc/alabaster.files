@@ -1,5 +1,6 @@
 #' @export
 BamWrapper <- function(path, index=NULL) {
+    .Deprecated(new = "BamFileReference")
     construct_indexed_wrapper(path, index=index, wrapper_class="BamWrapper", index_constructor=BamIndexWrapper)
 }
 

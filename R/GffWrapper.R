@@ -1,5 +1,6 @@
 #' @export
 GffWrapper <- function(path, compression=NULL, index=NULL, format=NULL) {
+    .Deprecated(new = "GffFileReference")
     if (is.null(format)) {
         if (grepl(gff2.pattern, path)) {
             format <- "GFF2"

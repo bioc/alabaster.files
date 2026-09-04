@@ -1,5 +1,6 @@
 #' @export
 BigWigWrapper <- function(path) {
+    .Deprecated(new = "BigWigFileReference")
     new("BigWigWrapper", path=path)
 }
 

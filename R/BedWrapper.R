@@ -1,5 +1,6 @@
 #' @export
 BedWrapper <- function(path, compression=NULL, index=NULL) {
+    .Deprecated(new = "BedFileReference")
     construct_compressed_indexed_wrapper(path, compression=compression, index=index, wrapper_class="BedWrapper", index_constructor=TabixIndexWrapper)
 }
 

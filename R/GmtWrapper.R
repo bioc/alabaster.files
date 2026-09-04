@@ -1,5 +1,6 @@
 #' @export
 GmtWrapper <- function(path, compression=NULL) {
+    .Deprecated(new = "GmtFileReference")
     construct_compressed_wrapper(path, compression=compression, wrapper_class="GmtWrapper")
 }
 

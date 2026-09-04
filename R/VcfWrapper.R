@@ -1,5 +1,6 @@
 #' @export
 VcfWrapper <- function(path, compression=NULL, index=NULL, header_only=FALSE) {
+    .Deprecated()
     construct_compressed_indexed_wrapper(path, compression=compression, index=index, wrapper_class="VcfWrapper", index_constructor=TabixIndexWrapper, header_only=header_only)
 }
 

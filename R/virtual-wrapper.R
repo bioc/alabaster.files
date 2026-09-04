@@ -61,6 +61,7 @@ setMethod("showheader", "Wrapper", function(object) {
 
 #' @importFrom alabaster.base .processMetadata
 save_wrapper <- function(x, dir, path, fname, index_class, ...) {
+    .Deprecated(old = "Wrapper")
     dir.create(file.path(dir, path), showWarnings=FALSE, recursive=TRUE)
 
     target <- paste0(path, "/", fname)
@@ -76,6 +77,7 @@ save_wrapper <- function(x, dir, path, fname, index_class, ...) {
 
 #' @importFrom alabaster.base .restoreMetadata acquireFile
 load_wrapper <- function(path, inner_meta, project, constructor, ...) {
+    .Deprecated(old = "Wrapper")
     fpath <- acquireFile(project, path)
     output <- constructor(fpath, ...)
     .restoreMetadata(output, mcol.data=NULL, meta.data=inner_meta$other_data, project)

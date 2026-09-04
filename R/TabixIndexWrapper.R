@@ -38,6 +38,7 @@
 #' loadTabixIndexWrapper
 #' @export
 TabixIndexWrapper <- function(path) {
+    .Deprecated()
     new("TabixIndexWrapper", path=path)
 }
 

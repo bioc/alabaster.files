@@ -1,5 +1,6 @@
 #' @export
 BigBedWrapper <- function(path) {
+    .Deprecated(new = "BigBedFileReference")
     new("BigBedWrapper", path=path)
 }
 

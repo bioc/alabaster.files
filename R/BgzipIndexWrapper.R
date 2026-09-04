@@ -41,6 +41,7 @@
 #' loadBgzipIndexWrapper
 #' @export
 BgzipIndexWrapper <- function(path) {
+    .Deprecated()
     new("BgzipIndexWrapper", path=path)
 }
 

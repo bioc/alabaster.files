@@ -1,5 +1,6 @@
 #' @export
 FaIndexWrapper <- function(path) {
+    .Deprecated()
     new("FaIndexWrapper", path=path)
 }
 

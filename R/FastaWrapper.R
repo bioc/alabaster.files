@@ -1,5 +1,6 @@
 #' @export
 FastaWrapper <- function(path, sequence.type="DNA", compression=NULL, index=NULL, gzindex=NULL) {
+    .Deprecated(new = "FastFileReference")
     construct_fa_wrapper(
         path, 
         compression=compression, 
