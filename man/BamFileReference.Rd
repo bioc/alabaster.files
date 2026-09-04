@@ -24,7 +24,7 @@ BamFileReference(path, index = NULL)
 \item{index}{String specifying the path to a BAI or CSI index file, or \code{NULL} if no index is available.}
 }
 \value{
-A BamFileReference instance that can be used in \code{\link{saveObject}}.
+A BamFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 }
 \description{
 Reference to a BAM file, for saving and reading in the \pkg{alabaster} framework.

@@ -41,7 +41,7 @@ If an index is supplied, the file at \code{path} should be BGZF-compressed, and 
 If an index is supplied, the file at \code{path} should be BGZF-compressed, and \code{faindex} should also be supplied.}
 }
 \value{
-A FastqFileReference instance that can be used in \code{\link{saveObject}}.
+A FastqFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 }
 \description{
 Reference to a FASTQ file, for saving and loading in the \pkg{alabaster} framework.

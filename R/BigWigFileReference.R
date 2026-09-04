@@ -6,7 +6,7 @@
 #'
 #' @author Aaron Lun
 #'
-#' @return A BigWigFileReference instance that can be used in \code{\link{stageObject}}.
+#' @return A BigWigFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 #'
 #' @examples
 #' # Mocking up a bigWig file.
@@ -25,14 +25,13 @@
 #' readObject(dir)
 #' 
 #' @docType class
-#' @aliases
-#' BigWigFileReference-class
-#' saveObject,BigWigFileReference-method
-#' readBigWigFileReference
-#' BigWigWrapper
-#' BigWigWrapper-class
-#' stageObject,BigWigWrapper-method
-#' loadBigWigWrapper
+#' @aliases BigWigFileReference-class
+#' @aliases saveObject,BigWigFileReference-method
+#' @aliases readBigWigFileReference
+#' @aliases BigWigWrapper
+#' @aliases BigWigWrapper-class
+#' @aliases stageObject,BigWigWrapper-method
+#' @aliases loadBigWigWrapper
 #' @export
 BigWigFileReference <- function(path) {
     new("BigWigFileReference", path=path)

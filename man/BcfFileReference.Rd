@@ -20,7 +20,7 @@ BcfFileReference(path, index = NULL)
 \item{index}{String specifying the path to an index file in tabix or CSI format, or \code{NULL} if no index is available.}
 }
 \value{
-A BcfFileReference instance that can be used in \code{\link{saveObject}}.
+A BcfFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 }
 \description{
 Reference to a BCF file, for saving and loading in the \pkg{alabaster} framework.

@@ -7,7 +7,7 @@
 #'
 #' @author Aaron Lun
 #'
-#' @return A BcfFileReference instance that can be used in \code{\link{saveObject}}.
+#' @return A BcfFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 #'
 #' @examples
 #' # Using Rsamtools's example file.
@@ -30,14 +30,13 @@
 #' readObject(dir)
 #' 
 #' @docType class
-#' @aliases
-#' BcfFileReference-class
-#' saveObject,BcfFileReference-method
-#' readBcfFileReference
-#' VcfWrapper
-#' VcfWrapper-class
-#' stageObject,VcfWrapper-method
-#' loadVcfWrapper
+#' @aliases BcfFileReference-class
+#' @aliases saveObject,BcfFileReference-method
+#' @aliases readBcfFileReference
+#' @aliases VcfWrapper
+#' @aliases VcfWrapper-class
+#' @aliases stageObject,VcfWrapper-method
+#' @aliases loadVcfWrapper
 #' @export
 BcfFileReference <- function(path, index=NULL) {
     new("BcfFileReference", path=path, index=index)

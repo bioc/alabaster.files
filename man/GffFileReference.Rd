@@ -22,7 +22,7 @@ The format is automatically detected from the file extension (\code{.gff2}, \cod
 If supplied, \code{path} should be coordinate-sorted and BGZF-compressed.}
 }
 \value{
-A GffFileReference instance that can be used in \code{\link{saveObject}}.
+A GffFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 }
 \description{
 Reference to a GFF2/3 file, for saving and loading in the \pkg{alabaster} framework.

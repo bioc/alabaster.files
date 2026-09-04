@@ -18,7 +18,7 @@ BigBedFileReference(path)
 \item{path}{String containing the path to a bigBed file.}
 }
 \value{
-A BigBedFileReference instance that can be used in \code{\link{stageObject}}.
+A BigBedFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 }
 \description{
 Reference to a bigBed file, for saving and loading in the \pkg{alabaster} framework.

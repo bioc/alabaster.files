@@ -18,7 +18,7 @@ GmtFileReference(path)
 \item{path}{String containing the path to a Gzip-compressed GMT file.}
 }
 \value{
-A GmtFileReference instance that can be used in \code{\link{stageObject}}.
+A GmtFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 }
 \description{
 Reference to a GMT file, for saving and loading in the \pkg{alabaster} framework.

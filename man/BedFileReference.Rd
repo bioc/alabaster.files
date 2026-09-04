@@ -21,7 +21,7 @@ BedFileReference(path, index = NULL)
 If supplied, \code{path} should be coordinate-sorted and BGZF-compressed.}
 }
 \value{
-A BedFileReference instance that can be used in \code{\link{saveObject}}.
+A BedFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 }
 \description{
 Reference to a BED file, for saving and loading in the \pkg{alabaster} framework.

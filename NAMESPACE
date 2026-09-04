@@ -86,13 +86,17 @@ import(methods)
 importClassesFrom(S4Vectors,Annotated)
 importFrom(BiocGenerics,path)
 importFrom(Rsamtools,index)
-importFrom(S4Vectors,coolcat)
-importFrom(S4Vectors,metadata)
-importFrom(alabaster.base,.loadObject)
-importFrom(alabaster.base,.processMetadata)
-importFrom(alabaster.base,.restoreMetadata)
-importFrom(alabaster.base,.stageObject)
-importFrom(alabaster.base,.writeMetadata)
-importFrom(alabaster.base,acquireFile)
-importFrom(alabaster.base,acquireMetadata)
-importFrom(alabaster.base,stageObject)
+importFrom(S4Vectors,
+  coolcat,
+  metadata
+)
+importFrom(alabaster.base,
+  .loadObject,
+  .processMetadata,
+  .restoreMetadata,
+  .stageObject,
+  .writeMetadata,
+  acquireFile,
+  acquireMetadata,
+  stageObject
+)

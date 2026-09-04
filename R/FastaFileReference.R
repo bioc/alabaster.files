@@ -12,7 +12,7 @@
 #'
 #' @author Aaron Lun
 #'
-#' @return A FastaFileReference instance that can be used in \code{\link{saveObject}}.
+#' @return A FastaFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 #'
 #' @examples
 #' # Mocking up a FASTA file.
@@ -32,19 +32,18 @@
 #' readObject(dir)
 #' 
 #' @docType class
-#' @aliases
-#' FastaFileReference-class
-#' saveObject,FastaFileReference-method
-#' readFastaFileReference
-#' FastaWrapper
-#' FastaWrapper-class
-#' stageObject,FastaWrapper-method
-#' show,FastaWrapper-method
-#' loadFastaWrapper
-#' FaIndexWrapper
-#' FaIndexWrapper-class
-#' stageObject,FaIndexWrapper-method
-#' loadFaIndexWrapper
+#' @aliases FastaFileReference-class
+#' @aliases saveObject,FastaFileReference-method
+#' @aliases readFastaFileReference
+#' @aliases FastaWrapper
+#' @aliases FastaWrapper-class
+#' @aliases stageObject,FastaWrapper-method
+#' @aliases show,FastaWrapper-method
+#' @aliases loadFastaWrapper
+#' @aliases FaIndexWrapper
+#' @aliases FaIndexWrapper-class
+#' @aliases stageObject,FaIndexWrapper-method
+#' @aliases loadFaIndexWrapper
 #' @export
 FastaFileReference <- function(path, seqtype="DNA", faindex=NULL, gzindex=NULL) {
     new("FastaFileReference", path=path, seqtype=seqtype, faindex=faindex, gzindex=gzindex)

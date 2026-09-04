@@ -18,7 +18,7 @@ BigWigFileReference(path)
 \item{path}{String containing the path to a bigWig file.}
 }
 \value{
-A BigWigFileReference instance that can be used in \code{\link{stageObject}}.
+A BigWigFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 }
 \description{
 Reference to a bigWig file, for saving and loading in the \pkg{alabaster} framework.

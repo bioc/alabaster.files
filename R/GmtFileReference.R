@@ -6,7 +6,7 @@
 #'
 #' @author Aaron Lun
 #'
-#' @return A GmtFileReference instance that can be used in \code{\link{stageObject}}.
+#' @return A GmtFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 #'
 #' @examples
 #' # Mocking up a GMT file.
@@ -25,14 +25,13 @@
 #' readObject(dir)
 #' 
 #' @docType class
-#' @aliases
-#' GmtFileReference-class
-#' saveObject,GmtFileReference-method
-#' readGmtFileReference
-#' GmtWrapper
-#' GmtWrapper-class
-#' stageObject,GmtWrapper-method
-#' loadGmtWrapper
+#' @aliases GmtFileReference-class
+#' @aliases saveObject,GmtFileReference-method
+#' @aliases readGmtFileReference
+#' @aliases GmtWrapper
+#' @aliases GmtWrapper-class
+#' @aliases stageObject,GmtWrapper-method
+#' @aliases loadGmtWrapper
 #' @export
 GmtFileReference <- function(path) {
     new("GmtFileReference", path=path)

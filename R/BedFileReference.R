@@ -8,7 +8,7 @@
 #'
 #' @author Aaron Lun
 #'
-#' @return A BedFileReference instance that can be used in \code{\link{saveObject}}.
+#' @return A BedFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 #'
 #' @examples
 #' # Mocking up a BED file.
@@ -34,14 +34,13 @@
 #' readObject(dir)
 #' 
 #' @docType class
-#' @aliases
-#' BedFileReference-class
-#' saveObject,BedFileReference-method
-#' readBedFileReference 
-#' BedWrapper
-#' BedWrapper-class
-#' stageObject,BedWrapper-method
-#' loadBedWrapper
+#' @aliases BedFileReference-class
+#' @aliases saveObject,BedFileReference-method
+#' @aliases readBedFileReference 
+#' @aliases BedWrapper
+#' @aliases BedWrapper-class
+#' @aliases stageObject,BedWrapper-method
+#' @aliases loadBedWrapper
 #' @export
 BedFileReference <- function(path, index=NULL) {
     new("BedFileReference", path=path, index=index)

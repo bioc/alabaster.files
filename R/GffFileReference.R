@@ -9,7 +9,7 @@
 #'
 #' @author Aaron Lun
 #'
-#' @return A GffFileReference instance that can be used in \code{\link{saveObject}}.
+#' @return A GffFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 #'
 #' @examples
 #' # Using rtracklayer's example GFF file.
@@ -30,14 +30,13 @@
 #' readObject(dir)
 #' 
 #' @docType class
-#' @aliases
-#' GffFileReference-class
-#' saveObject,GffFileReference-method
-#' readGffFileReference
-#' GffWrapper
-#' GffWrapper-class
-#' stageObject,GffWrapper-method
-#' loadGffWrapper
+#' @aliases GffFileReference-class
+#' @aliases saveObject,GffFileReference-method
+#' @aliases readGffFileReference
+#' @aliases GffWrapper
+#' @aliases GffWrapper-class
+#' @aliases stageObject,GffWrapper-method
+#' @aliases loadGffWrapper
 #' @export
 GffFileReference <- function(path, index=NULL) {
     new("GffFileReference", path=path, index=index)

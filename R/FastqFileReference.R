@@ -10,7 +10,7 @@
 #' @inheritParams FastaFileReference
 #' @author Aaron Lun
 #'
-#' @return A FastqFileReference instance that can be used in \code{\link{saveObject}}.
+#' @return A FastqFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 #'
 #' @examples
 #' # Mocking up a FASTQ file.
@@ -30,15 +30,14 @@
 #' readObject(dir)
 #' 
 #' @docType class
-#' @aliases
-#' FastqFileReference-class
-#' saveObject,FastqFileReference-method
-#' readFastqFileReference
-#' FastqWrapper
-#' FastqWrapper-class
-#' stageObject,FastqWrapper-method
-#' show,FastqWrapper-method
-#' loadFastqWrapper
+#' @aliases FastqFileReference-class
+#' @aliases saveObject,FastqFileReference-method
+#' @aliases readFastqFileReference
+#' @aliases FastqWrapper
+#' @aliases FastqWrapper-class
+#' @aliases stageObject,FastqWrapper-method
+#' @aliases show,FastqWrapper-method
+#' @aliases loadFastqWrapper
 #' @export
 FastqFileReference <- function(path, seqtype="DNA", qualtype="phred", qualoffset=33, faindex=NULL, gzindex=NULL) {
     new("FastqFileReference", path=path, seqtype=seqtype, qualtype=qualtype, qualoffset=as.integer(qualoffset), faindex=faindex, gzindex=gzindex)

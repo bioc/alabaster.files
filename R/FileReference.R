@@ -5,14 +5,13 @@
 #'
 #' @author Aaron Lun
 #' 
-#' @aliases
-#' FileReference-class
-#' path,FileReference-method
-#' [[,FileReference-method
-#' [[<-,FileReference-method
-#' $,FileReference-method
-#' $<-,FileReference-method
-#' show,FileReference-method
+#' @aliases FileReference-class
+#' @aliases path,FileReference-method
+#' @aliases [[,FileReference-method
+#' @aliases [[<-,FileReference-method
+#' @aliases $,FileReference-method
+#' @aliases $<-,FileReference-method
+#' @aliases show,FileReference-method
 #'
 #' @name FileReference
 NULL

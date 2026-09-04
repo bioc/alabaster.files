@@ -6,7 +6,7 @@
 #'
 #' @author Aaron Lun
 #'
-#' @return A BigBedFileReference instance that can be used in \code{\link{stageObject}}.
+#' @return A BigBedFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 #'
 #' @examples
 #' # Mocking up a bigBed file.
@@ -25,14 +25,13 @@
 #' readObject(dir)
 #' 
 #' @docType class
-#' @aliases
-#' BigBedFileReference-class
-#' saveObject,BigBedFileReference-method
-#' readBigBedFileReference
-#' BigBedWrapper
-#' BigBedWrapper-class
-#' stageObject,BigBedWrapper-method
-#' loadBigBedWrapper
+#' @aliases BigBedFileReference-class
+#' @aliases saveObject,BigBedFileReference-method
+#' @aliases readBigBedFileReference
+#' @aliases BigBedWrapper
+#' @aliases BigBedWrapper-class
+#' @aliases stageObject,BigBedWrapper-method
+#' @aliases loadBigBedWrapper
 #' @export
 BigBedFileReference <- function(path) {
     new("BigBedFileReference", path=path)

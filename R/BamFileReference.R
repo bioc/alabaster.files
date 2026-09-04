@@ -7,7 +7,7 @@
 #'
 #' @author Aaron Lun
 #'
-#' @return A BamFileReference instance that can be used in \code{\link{saveObject}}.
+#' @return A BamFileReference instance that can be used in \code{\link[alabaster.base]{saveObject}}.
 #'
 #' @examples
 #' # Using a BAM file from Rsamtools.
@@ -30,18 +30,17 @@
 #' readObject(dir)
 #' 
 #' @docType class
-#' @aliases
-#' BamFileReference-class
-#' saveObject,BamFileReference-method
-#' readBamFileReference
-#' BamWrapper
-#' BamWrapper-class
-#' stageObject,BamWrapper-method
-#' loadBamWrapper
-#' BamIndexWrapper
-#' BamIndexWrapper-class
-#' stageObject,BamIndexWrapper-method
-#' loadBamIndexWrapper
+#' @aliases BamFileReference-class
+#' @aliases saveObject,BamFileReference-method
+#' @aliases readBamFileReference
+#' @aliases BamWrapper
+#' @aliases BamWrapper-class
+#' @aliases stageObject,BamWrapper-method
+#' @aliases loadBamWrapper
+#' @aliases BamIndexWrapper
+#' @aliases BamIndexWrapper-class
+#' @aliases stageObject,BamIndexWrapper-method
+#' @aliases loadBamIndexWrapper
 #' @export
 BamFileReference <- function(path, index=NULL) {
     new("BamFileReference", path=path, index=index)
